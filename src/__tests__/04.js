@@ -16,7 +16,6 @@ test('Usage works', () => {
   expect(button).toHaveTextContent(/4/)
   fireEvent.click(button)
   expect(button).toHaveTextContent(/5/)
-  flushEffects()
   expect(window.localStorage.getItem('count')).toBe('5')
 })
 
